@@ -51,6 +51,9 @@ h1, h2, h3, h4, h5, h6 {
     color: $pink;
   }
 }
+p {
+  font-weight: 100;
+}
 #container {
   
 }
@@ -230,91 +233,127 @@ h1, h2, h3, h4, h5, h6 {
           }
         }
       }
-      .input-container-perspective-wrapper {
-        perspective: 1000px;
-        perspective-origin: 100% 0%;
+      .input-wrapper {
         z-index: 999;
-        .input-container-perspective {
+        transform: translateX(-150px);
+        width: 400px;
+        height: 100%;
+        width: 100%;
+        .tabs-wrapper {
+          display: flex;
+          justify-content: flex-end;
+          width: 100%;
+          padding-right: 2rem;
+          .tab {
+            box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.227);
+            border-radius: 42px 10px 0px 0px;
+            padding: 0 1.5rem;
+            width: 150px;
+            h6 {
+              font-weight: 300;
+              text-align: end;
+            }
+          }
+          .tab-1 {
+            background-color: $orange-2;
+            z-index: 10;
+            h6 {
+              font-size: 23px;
+              font-weight: 400;
+            }
+          }
+          .tab-2, .tab-3, .tab-4 {
+            background-color: $pink;
+            h6 {
+              font-size: 20px;
+            }
+          }
+          .tab-2 {
+            z-index: 9;
+            transform: translateX(-10px);
+          }
+          .tab-3 {
+            z-index: 8;
+            transform: translateX(-20px);
+          }
+          .tab-4 {
+            z-index: 7;
+            transform: translateX(-30px);
+          }
+        }
+        .input-container {
+          display: flex;
+          flex-direction: column;
           background-color: #1d1916f7;
-          width: 600px;
-          // height: 290px;
-          transform: rotateX(-5deg) translateX(-150px);
-          border-radius: 5px;
-          // border-left: 3px solid $light-1;
-          // border-bottom: 3px solid $light-1;
+          border-radius: 5px 5px 5px 70px;
+          padding: 2rem 4rem 2rem 3rem;
           box-shadow: 8px 7px 8px 2px rgba(0, 0, 0, 0.227);
-
-          .input-wrapper {
-            perspective: 1000px;
-            perspective-origin: 100% 0%;
-            height: 100%;
-            width: 100%;
-            .input-container {
-              transform: rotateX(5deg);
+          border: 1px solid $orange-2;
+          form {
+            .age-container, .cups-per-week-container, .price-per-cup-container {
               display: flex;
-              flex-direction: column;
-              height: 100%;
-              width: 100%;
-              padding: 2rem;
-              .age-container, .cups-per-week-container, .price-per-cup-container {
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                color: $light-2;
+              justify-content: space-between;
+              align-items: center;
+              color: $light-2;
+              font-size: 20px;
+              font-weight: 100;
+              margin-bottom: .5rem;
+              padding-bottom: .5rem;
+              border-bottom: 1px solid #85715f2d;
+              label {
+                width: 200px;
+              }
+              input {
+                background-color: #140f0ebf;
+                border: none;
+                height: 50px;
+                width: 100px;
+                border-radius: 5px;
+                text-align: center;
+                font-size: 25px;
+                // margin-right: 1rem;
+                font-family: 'Montserrat Alternates', sans-serif;
+                color: #eac8ae;
+                font-size: 18px;
+                box-shadow: inset 3px 4px 6px 2px rgba(0, 0, 0, 0.231);
+                &::placeholder {
+                  color: #85715f98;
+                }
+                &:focus {
+                  outline: none;
+                }
+                &:focus::placeholder {
+                  color: transparent;
+                }
+              }
+              &.hidden {
+                display: none;
+              }
+            }
+            .age-container {
+              padding-bottom: 1rem;
+            }
+            .submit-btn-container {
+              display: flex;
+              justify-content: flex-end;
+              input {
+                cursor: pointer;
+                background-color: $orange-2;
+                border: none;
+                height: 50px;
+                width: 110px;
+                font-family: 'Barlow', sans-serif;
+                border-radius: 5px;
                 font-size: 20px;
-                font-weight: 100;
-                margin-bottom: .5rem;
-                padding-bottom: .5rem;
-                border-bottom: 1px solid #85715f2d;
-                label {
-                  width: 200px;
-                }
-                input {
-                  background-color: #140f0ebf;
-                  border: none;
-                  height: 50px;
-                  width: 100px;
-                  border-radius: 5px;
-                  text-align: center;
-                  font-size: 25px;
-                  margin-right: 3rem;
-                  font-family: 'Montserrat Alternates', sans-serif;
-                  color: #eac8ae;
-                  font-size: 18px;
-                  box-shadow: inset 3px 4px 6px 2px rgba(0, 0, 0, 0.231);
-                  &::placeholder {
-                    color: #85715f98;
-                  }
-                  &:focus {
-                    outline: none;
-                  }
-                  &:focus::placeholder {
-                    color: transparent;
-                  }
+                transform: translate(30px,10px);
+                box-shadow: 4px 5px 4px 2px rgba(0, 0, 0, 0.231);
+                transition: 200ms;
+                &:hover {
+                  background-color: $pink;
                 }
               }
-              .age-container {
-                padding-bottom: 1rem;
-              }
-              .submit-btn-container {
-                display: flex;
-                justify-content: flex-end;
-                input {
-                  cursor: pointer;
-                  background-color: $orange-2;
-                  border: none;
-                  height: 50px;
-                  width: 110px;
-                  font-family: 'Barlow', sans-serif;
-                  border-radius: 5px;
-                  font-size: 20px;
-                  transform: translate(-30px,10px);
-                  box-shadow: 4px 5px 4px 2px rgba(0, 0, 0, 0.231);
-                  transition: 200ms;
-                  &:hover {
-                    background-color: $pink;
-                  }
-                }
+              &.hidden {
+                display: none;
               }
             }
           }

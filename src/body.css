@@ -31,6 +31,9 @@ h1, h2, h3, h4, h5, h6 {
     font-family: 'Montserrat Alternates', sans-serif;
     color: #F32744; }
 
+p {
+  font-weight: 100; }
+
 .wrapper {
   display: flex;
   align-items: center;
@@ -175,75 +178,102 @@ h1, h2, h3, h4, h5, h6 {
                 margin-left: 1rem;
                 background-color: #85715f;
                 border-radius: 0px 0px 0px 10px; }
-      .wrapper .inner .main-container .input-container-perspective-wrapper {
-        perspective: 1000px;
-        perspective-origin: 100% 0%;
-        z-index: 999; }
-        .wrapper .inner .main-container .input-container-perspective-wrapper .input-container-perspective {
+      .wrapper .inner .main-container .input-wrapper {
+        z-index: 999;
+        transform: translateX(-150px);
+        width: 400px;
+        height: 100%;
+        width: 100%; }
+        .wrapper .inner .main-container .input-wrapper .tabs-wrapper {
+          display: flex;
+          justify-content: flex-end;
+          width: 100%;
+          padding-right: 2rem; }
+          .wrapper .inner .main-container .input-wrapper .tabs-wrapper .tab {
+            box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.227);
+            border-radius: 42px 10px 0px 0px;
+            padding: 0 1.5rem;
+            width: 150px; }
+            .wrapper .inner .main-container .input-wrapper .tabs-wrapper .tab h6 {
+              font-weight: 300;
+              text-align: end; }
+          .wrapper .inner .main-container .input-wrapper .tabs-wrapper .tab-1 {
+            background-color: #F37027;
+            z-index: 10; }
+            .wrapper .inner .main-container .input-wrapper .tabs-wrapper .tab-1 h6 {
+              font-size: 23px;
+              font-weight: 400; }
+          .wrapper .inner .main-container .input-wrapper .tabs-wrapper .tab-2, .wrapper .inner .main-container .input-wrapper .tabs-wrapper .tab-3, .wrapper .inner .main-container .input-wrapper .tabs-wrapper .tab-4 {
+            background-color: #F32744; }
+            .wrapper .inner .main-container .input-wrapper .tabs-wrapper .tab-2 h6, .wrapper .inner .main-container .input-wrapper .tabs-wrapper .tab-3 h6, .wrapper .inner .main-container .input-wrapper .tabs-wrapper .tab-4 h6 {
+              font-size: 20px; }
+          .wrapper .inner .main-container .input-wrapper .tabs-wrapper .tab-2 {
+            z-index: 9;
+            transform: translateX(-10px); }
+          .wrapper .inner .main-container .input-wrapper .tabs-wrapper .tab-3 {
+            z-index: 8;
+            transform: translateX(-20px); }
+          .wrapper .inner .main-container .input-wrapper .tabs-wrapper .tab-4 {
+            z-index: 7;
+            transform: translateX(-30px); }
+        .wrapper .inner .main-container .input-wrapper .input-container {
+          display: flex;
+          flex-direction: column;
           background-color: #1d1916f7;
-          width: 600px;
-          transform: rotateX(-5deg) translateX(-150px);
-          border-radius: 5px;
-          box-shadow: 8px 7px 8px 2px rgba(0, 0, 0, 0.227); }
-          .wrapper .inner .main-container .input-container-perspective-wrapper .input-container-perspective .input-wrapper {
-            perspective: 1000px;
-            perspective-origin: 100% 0%;
-            height: 100%;
-            width: 100%; }
-            .wrapper .inner .main-container .input-container-perspective-wrapper .input-container-perspective .input-wrapper .input-container {
-              transform: rotateX(5deg);
-              display: flex;
-              flex-direction: column;
-              height: 100%;
-              width: 100%;
-              padding: 2rem; }
-              .wrapper .inner .main-container .input-container-perspective-wrapper .input-container-perspective .input-wrapper .input-container .age-container, .wrapper .inner .main-container .input-container-perspective-wrapper .input-container-perspective .input-wrapper .input-container .cups-per-week-container, .wrapper .inner .main-container .input-container-perspective-wrapper .input-container-perspective .input-wrapper .input-container .price-per-cup-container {
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                color: #D1C9A9;
-                font-size: 20px;
-                font-weight: 100;
-                margin-bottom: .5rem;
-                padding-bottom: .5rem;
-                border-bottom: 1px solid #85715f2d; }
-                .wrapper .inner .main-container .input-container-perspective-wrapper .input-container-perspective .input-wrapper .input-container .age-container label, .wrapper .inner .main-container .input-container-perspective-wrapper .input-container-perspective .input-wrapper .input-container .cups-per-week-container label, .wrapper .inner .main-container .input-container-perspective-wrapper .input-container-perspective .input-wrapper .input-container .price-per-cup-container label {
-                  width: 200px; }
-                .wrapper .inner .main-container .input-container-perspective-wrapper .input-container-perspective .input-wrapper .input-container .age-container input, .wrapper .inner .main-container .input-container-perspective-wrapper .input-container-perspective .input-wrapper .input-container .cups-per-week-container input, .wrapper .inner .main-container .input-container-perspective-wrapper .input-container-perspective .input-wrapper .input-container .price-per-cup-container input {
-                  background-color: #140f0ebf;
-                  border: none;
-                  height: 50px;
-                  width: 100px;
-                  border-radius: 5px;
-                  text-align: center;
-                  font-size: 25px;
-                  margin-right: 3rem;
-                  font-family: 'Montserrat Alternates', sans-serif;
-                  color: #eac8ae;
-                  font-size: 18px;
-                  box-shadow: inset 3px 4px 6px 2px rgba(0, 0, 0, 0.231); }
-                  .wrapper .inner .main-container .input-container-perspective-wrapper .input-container-perspective .input-wrapper .input-container .age-container input::placeholder, .wrapper .inner .main-container .input-container-perspective-wrapper .input-container-perspective .input-wrapper .input-container .cups-per-week-container input::placeholder, .wrapper .inner .main-container .input-container-perspective-wrapper .input-container-perspective .input-wrapper .input-container .price-per-cup-container input::placeholder {
-                    color: #85715f98; }
-                  .wrapper .inner .main-container .input-container-perspective-wrapper .input-container-perspective .input-wrapper .input-container .age-container input:focus, .wrapper .inner .main-container .input-container-perspective-wrapper .input-container-perspective .input-wrapper .input-container .cups-per-week-container input:focus, .wrapper .inner .main-container .input-container-perspective-wrapper .input-container-perspective .input-wrapper .input-container .price-per-cup-container input:focus {
-                    outline: none; }
-                  .wrapper .inner .main-container .input-container-perspective-wrapper .input-container-perspective .input-wrapper .input-container .age-container input:focus::placeholder, .wrapper .inner .main-container .input-container-perspective-wrapper .input-container-perspective .input-wrapper .input-container .cups-per-week-container input:focus::placeholder, .wrapper .inner .main-container .input-container-perspective-wrapper .input-container-perspective .input-wrapper .input-container .price-per-cup-container input:focus::placeholder {
-                    color: transparent; }
-              .wrapper .inner .main-container .input-container-perspective-wrapper .input-container-perspective .input-wrapper .input-container .age-container {
-                padding-bottom: 1rem; }
-              .wrapper .inner .main-container .input-container-perspective-wrapper .input-container-perspective .input-wrapper .input-container .submit-btn-container {
-                display: flex;
-                justify-content: flex-end; }
-                .wrapper .inner .main-container .input-container-perspective-wrapper .input-container-perspective .input-wrapper .input-container .submit-btn-container input {
-                  cursor: pointer;
-                  background-color: #F37027;
-                  border: none;
-                  height: 50px;
-                  width: 110px;
-                  font-family: 'Barlow', sans-serif;
-                  border-radius: 5px;
-                  font-size: 20px;
-                  transform: translate(-30px, 10px);
-                  box-shadow: 4px 5px 4px 2px rgba(0, 0, 0, 0.231);
-                  transition: 200ms; }
-                  .wrapper .inner .main-container .input-container-perspective-wrapper .input-container-perspective .input-wrapper .input-container .submit-btn-container input:hover {
-                    background-color: #F32744; }
+          border-radius: 5px 5px 5px 70px;
+          padding: 2rem 4rem 2rem 3rem;
+          box-shadow: 8px 7px 8px 2px rgba(0, 0, 0, 0.227);
+          border: 1px solid #F37027; }
+          .wrapper .inner .main-container .input-wrapper .input-container form .age-container, .wrapper .inner .main-container .input-wrapper .input-container form .cups-per-week-container, .wrapper .inner .main-container .input-wrapper .input-container form .price-per-cup-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: #D1C9A9;
+            font-size: 20px;
+            font-weight: 100;
+            margin-bottom: .5rem;
+            padding-bottom: .5rem;
+            border-bottom: 1px solid #85715f2d; }
+            .wrapper .inner .main-container .input-wrapper .input-container form .age-container label, .wrapper .inner .main-container .input-wrapper .input-container form .cups-per-week-container label, .wrapper .inner .main-container .input-wrapper .input-container form .price-per-cup-container label {
+              width: 200px; }
+            .wrapper .inner .main-container .input-wrapper .input-container form .age-container input, .wrapper .inner .main-container .input-wrapper .input-container form .cups-per-week-container input, .wrapper .inner .main-container .input-wrapper .input-container form .price-per-cup-container input {
+              background-color: #140f0ebf;
+              border: none;
+              height: 50px;
+              width: 100px;
+              border-radius: 5px;
+              text-align: center;
+              font-size: 25px;
+              font-family: 'Montserrat Alternates', sans-serif;
+              color: #eac8ae;
+              font-size: 18px;
+              box-shadow: inset 3px 4px 6px 2px rgba(0, 0, 0, 0.231); }
+              .wrapper .inner .main-container .input-wrapper .input-container form .age-container input::placeholder, .wrapper .inner .main-container .input-wrapper .input-container form .cups-per-week-container input::placeholder, .wrapper .inner .main-container .input-wrapper .input-container form .price-per-cup-container input::placeholder {
+                color: #85715f98; }
+              .wrapper .inner .main-container .input-wrapper .input-container form .age-container input:focus, .wrapper .inner .main-container .input-wrapper .input-container form .cups-per-week-container input:focus, .wrapper .inner .main-container .input-wrapper .input-container form .price-per-cup-container input:focus {
+                outline: none; }
+              .wrapper .inner .main-container .input-wrapper .input-container form .age-container input:focus::placeholder, .wrapper .inner .main-container .input-wrapper .input-container form .cups-per-week-container input:focus::placeholder, .wrapper .inner .main-container .input-wrapper .input-container form .price-per-cup-container input:focus::placeholder {
+                color: transparent; }
+            .wrapper .inner .main-container .input-wrapper .input-container form .age-container.hidden, .wrapper .inner .main-container .input-wrapper .input-container form .cups-per-week-container.hidden, .wrapper .inner .main-container .input-wrapper .input-container form .price-per-cup-container.hidden {
+              display: none; }
+          .wrapper .inner .main-container .input-wrapper .input-container form .age-container {
+            padding-bottom: 1rem; }
+          .wrapper .inner .main-container .input-wrapper .input-container form .submit-btn-container {
+            display: flex;
+            justify-content: flex-end; }
+            .wrapper .inner .main-container .input-wrapper .input-container form .submit-btn-container input {
+              cursor: pointer;
+              background-color: #F37027;
+              border: none;
+              height: 50px;
+              width: 110px;
+              font-family: 'Barlow', sans-serif;
+              border-radius: 5px;
+              font-size: 20px;
+              transform: translate(30px, 10px);
+              box-shadow: 4px 5px 4px 2px rgba(0, 0, 0, 0.231);
+              transition: 200ms; }
+              .wrapper .inner .main-container .input-wrapper .input-container form .submit-btn-container input:hover {
+                background-color: #F32744; }
+            .wrapper .inner .main-container .input-wrapper .input-container form .submit-btn-container.hidden {
+              display: none; }
