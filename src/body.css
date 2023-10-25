@@ -187,35 +187,35 @@ p {
         .wrapper .inner .main-container .input-wrapper .tabs-wrapper {
           display: flex;
           justify-content: flex-end;
-          width: 100%;
-          padding-right: 2rem; }
+          width: 100%; }
           .wrapper .inner .main-container .input-wrapper .tabs-wrapper .tab {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
             box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.227);
             border-radius: 42px 10px 0px 0px;
-            padding: 0 1.5rem;
-            width: 150px; }
+            padding-right: 1rem;
+            width: 125px;
+            scale: 1;
+            background-color: #F32744; }
             .wrapper .inner .main-container .input-wrapper .tabs-wrapper .tab h6 {
               font-weight: 300;
-              text-align: end; }
-          .wrapper .inner .main-container .input-wrapper .tabs-wrapper .tab-1 {
-            background-color: #F37027;
-            z-index: 10; }
-            .wrapper .inner .main-container .input-wrapper .tabs-wrapper .tab-1 h6 {
-              font-size: 23px;
-              font-weight: 400; }
-          .wrapper .inner .main-container .input-wrapper .tabs-wrapper .tab-2, .wrapper .inner .main-container .input-wrapper .tabs-wrapper .tab-3, .wrapper .inner .main-container .input-wrapper .tabs-wrapper .tab-4 {
-            background-color: #F32744; }
-            .wrapper .inner .main-container .input-wrapper .tabs-wrapper .tab-2 h6, .wrapper .inner .main-container .input-wrapper .tabs-wrapper .tab-3 h6, .wrapper .inner .main-container .input-wrapper .tabs-wrapper .tab-4 h6 {
               font-size: 20px; }
+          .wrapper .inner .main-container .input-wrapper .tabs-wrapper .tab-info {
+            width: 70px;
+            z-index: 11; }
+          .wrapper .inner .main-container .input-wrapper .tabs-wrapper .tab-1 {
+            z-index: 10;
+            transform: translateX(-10px); }
           .wrapper .inner .main-container .input-wrapper .tabs-wrapper .tab-2 {
             z-index: 9;
-            transform: translateX(-10px); }
+            transform: translateX(-20px); }
           .wrapper .inner .main-container .input-wrapper .tabs-wrapper .tab-3 {
             z-index: 8;
-            transform: translateX(-20px); }
+            transform: translateX(-30px); }
           .wrapper .inner .main-container .input-wrapper .tabs-wrapper .tab-4 {
             z-index: 7;
-            transform: translateX(-30px); }
+            transform: translateX(-40px); }
         .wrapper .inner .main-container .input-wrapper .input-container {
           display: flex;
           flex-direction: column;
@@ -223,7 +223,9 @@ p {
           border-radius: 5px 5px 5px 70px;
           padding: 2rem 4rem 2rem 3rem;
           box-shadow: 8px 7px 8px 2px rgba(0, 0, 0, 0.227);
-          border: 1px solid #F37027; }
+          height: 345px; }
+          .wrapper .inner .main-container .input-wrapper .input-container .border {
+            border: 1px solid #F37027; }
           .wrapper .inner .main-container .input-wrapper .input-container form .age-container, .wrapper .inner .main-container .input-wrapper .input-container form .cups-per-week-container, .wrapper .inner .main-container .input-wrapper .input-container form .price-per-cup-container {
             display: flex;
             justify-content: space-between;
@@ -254,8 +256,6 @@ p {
                 outline: none; }
               .wrapper .inner .main-container .input-wrapper .input-container form .age-container input:focus::placeholder, .wrapper .inner .main-container .input-wrapper .input-container form .cups-per-week-container input:focus::placeholder, .wrapper .inner .main-container .input-wrapper .input-container form .price-per-cup-container input:focus::placeholder {
                 color: transparent; }
-            .wrapper .inner .main-container .input-wrapper .input-container form .age-container.hidden, .wrapper .inner .main-container .input-wrapper .input-container form .cups-per-week-container.hidden, .wrapper .inner .main-container .input-wrapper .input-container form .price-per-cup-container.hidden {
-              display: none; }
           .wrapper .inner .main-container .input-wrapper .input-container form .age-container {
             padding-bottom: 1rem; }
           .wrapper .inner .main-container .input-wrapper .input-container form .submit-btn-container {
@@ -270,10 +270,31 @@ p {
               font-family: 'Barlow', sans-serif;
               border-radius: 5px;
               font-size: 20px;
+              font-weight: 200;
               transform: translate(30px, 10px);
               box-shadow: 4px 5px 4px 2px rgba(0, 0, 0, 0.231);
               transition: 200ms; }
               .wrapper .inner .main-container .input-wrapper .input-container form .submit-btn-container input:hover {
                 background-color: #F32744; }
-            .wrapper .inner .main-container .input-wrapper .input-container form .submit-btn-container.hidden {
-              display: none; }
+              .wrapper .inner .main-container .input-wrapper .input-container form .submit-btn-container input:active {
+                background-color: #c0243c; }
+          .wrapper .inner .main-container .input-wrapper .input-container .results-wrapper {
+            width: 600px;
+            color: #E4DDBD; }
+
+footer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  z-index: 100;
+  height: 0;
+  font-size: 14px;
+  font-weight: 100;
+  transform: translateY(-30px);
+  color: #D1C9A9; }
+
+.selected-tab {
+  background-color: #F37027 !important; }
+
+.hidden {
+  display: none !important; }

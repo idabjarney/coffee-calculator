@@ -5,6 +5,7 @@
     <link rel="icon" type="image/svg+xml" href="/coffee-icon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Coffee savings</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,100,0,0" />
   </head>
   <body>
     <div class="wrapper">
@@ -50,7 +51,12 @@
             </div>
           </div>
           <div class="input-wrapper">
-            <div class="tabs-wrapper">
+            <div class="tabs-wrapper hidden">
+              <div class="tab tab-info selected-tab">
+                <span class="material-symbols-outlined">
+                  info
+                  </span>
+              </div>
               <div class="tab tab-1">
                 <h6>5 YEARS</h6>
               </div>
@@ -66,38 +72,33 @@
             </div>
             <div class="input-container">
               <form>
-                <div class="age-container hidden">
+                <div class="input age-container">
                   <label for="age">Your age?</label>
-                  <input name="age" type="text" placeholder="26">
+                  <input class="age-input" name="age" type="number" placeholder="26">
                 </div>
-                <div class="cups-per-week-container hidden">
+                <div class="input cups-per-week-container">
                   <label for="cups">Estimated cups per week?</label>
-                  <input name="cups" type="text" placeholder="14">
+                  <input class="cups-per-week-input" name="cups" type="number" placeholder="14">
                 </div>
-                <div class="price-per-cup-container hidden">
+                <div class="input price-per-cup-container">
                   <label for="cups">Price per coffee of choice? (£)</label>
-                  <input name="cups" type="text" placeholder="£ 3.9">
+                  <input class="coffee-price-input" name="cups" type="number" placeholder="£ 3.9">
                 </div>
-                <div class="submit-btn-container hidden">
-                  <input type="submit" value="SUBMIT">
+                <div class="submit-btn-container ">
+                  <input class="submit-btn" type="submit" value="SUBMIT">
                 </div>
               </form>
-              <div class="calculation-information">
-                <p>
-                  According to  the information you gave, every week you spend  on average £46.7 on buying coffee for £3.4 a cup. This would add up to £2.428,4 annually.
-                </p>
-              </div>
-              <div class="calculatation-results">
-                <div class="savings-info">
+              <div class="results-wrapper hidden">
+                <div class="calculation-information">
+                  <h3>
+                    The run down
+                  </h3>
                   <p>
-                    If you instead put the money you spent into a standard savings account with a 2.84% interest rate..
+                    According to  the information you have given, every week you spend  on average £46.7 on buying coffee for £<span class="cup-input-value">3.4</span> a cup. This would add up to £2,428.4 annually.
                   </p>
-                </div>
-                <div class="results-info">
                   <p>
-                    After 15 years you could save..
+                    Select the tabs above to find out what you could be saving over time if you started today...Or if you wish to know how the calculations work click the questionmark tab on the right hand side.
                   </p>
-                  <h3>£38,534.64</h2>
                 </div>
               </div>
             </div>
@@ -105,6 +106,9 @@
         </div>
       </div>
     </div>
+    <footer>
+      © 2023 Ída Bjarney
+    </footer>
     <script type="module" src="/src/main.ts"></script>
   </body>
 </html>

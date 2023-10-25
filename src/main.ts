@@ -1,21 +1,33 @@
 import './body.scss'
 
-const coffeeCupPrice: number = 2.45; // £
+const inputContainers: NodeList = document.querySelectorAll('.input');
+const ageInput: HTMLInputElement = document.querySelector('.age-input');
+const cupsPerWeekInput: HTMLInputElement = document.querySelector('.cups-per-week-input');
+const coffePriceInput: HTMLInputElement = document.querySelector('.coffee-price-input');
+const submitBtn: HTMLInputElement = document.querySelector('.submit-btn');
+
 const interestRate: number = 0.0284; // percentage
 const pensionRate: number = 0.02; // percentage
 const inflationRate: number = 0.024; // percentage
-const cupsPerWeek: number = 7; // number of cups per week
-const userAge: number = 30;
 const pensionAge: number = 67;
 const weeks: number = 52;
 const yearPlaceholder: number = 5;
-const annualNumberOfCups: number = weeks * cupsPerWeek;
-const annualPriceOfCups: number = (annualNumberOfCups * coffeeCupPrice);
 const fiveYears: number = 5;
 const tenYears: number = 10;
 const fifteenYears: number = 15;
+let cupsPerWeek: number = 0;
+let userAge: number = 0;
+let coffeeCupPrice: number = 0; // £
+const annualNumberOfCups: number = weeks * cupsPerWeek;
 const yearsTillPension: number = calculateYearsUntilPension(userAge, pensionAge);
-// 4fa9ac
+const annualPriceOfCups: number = (annualNumberOfCups * coffeeCupPrice);
+
+submitBtn.addEventListener('click', (e) => {
+  e.preventDefault();
+  let userAge = ageInput.value;
+  console.log(userAge);
+})
+
 
 function calculateYearsUntilPension(userAge, pensionAge) {
   let years: number = pensionAge - userAge;

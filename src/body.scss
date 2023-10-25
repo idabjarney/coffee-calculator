@@ -54,14 +54,13 @@ h1, h2, h3, h4, h5, h6 {
 p {
   font-weight: 100;
 }
-#container {
-  
-}
+
+
 .wrapper {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+height: 100vh;
   width: 100%;
   position: relative;
   background-color: $brown;
@@ -243,42 +242,43 @@ p {
           display: flex;
           justify-content: flex-end;
           width: 100%;
-          padding-right: 2rem;
+
           .tab {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
             box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.227);
             border-radius: 42px 10px 0px 0px;
-            padding: 0 1.5rem;
-            width: 150px;
-            h6 {
-              font-weight: 300;
-              text-align: end;
-            }
-          }
-          .tab-1 {
-            background-color: $orange-2;
-            z-index: 10;
-            h6 {
-              font-size: 23px;
-              font-weight: 400;
-            }
-          }
-          .tab-2, .tab-3, .tab-4 {
+            padding-right:1rem ;
+            width: 125px;
+            scale: 1;
             background-color: $pink;
             h6 {
+              font-weight: 300;
               font-size: 20px;
             }
           }
+
+          .tab-info {
+            width: 70px;
+            z-index: 11;
+          }
+          .tab-1 {
+            z-index: 10;
+            transform: translateX(-10px);
+
+          }
           .tab-2 {
             z-index: 9;
-            transform: translateX(-10px);
+            transform: translateX(-20px);
           }
           .tab-3 {
             z-index: 8;
-            transform: translateX(-20px);
+            transform: translateX(-30px);
           }
           .tab-4 {
             z-index: 7;
-            transform: translateX(-30px);
+            transform: translateX(-40px);
           }
         }
         .input-container {
@@ -288,7 +288,10 @@ p {
           border-radius: 5px 5px 5px 70px;
           padding: 2rem 4rem 2rem 3rem;
           box-shadow: 8px 7px 8px 2px rgba(0, 0, 0, 0.227);
-          border: 1px solid $orange-2;
+          height: 345px;
+          .border {
+            border: 1px solid $orange-2;
+          }
           form {
             .age-container, .cups-per-week-container, .price-per-cup-container {
               display: flex;
@@ -326,9 +329,9 @@ p {
                   color: transparent;
                 }
               }
-              &.hidden {
-                display: none;
-              }
+              // &.hidden {
+              //   display: none;
+              // }
             }
             .age-container {
               padding-bottom: 1rem;
@@ -345,20 +348,51 @@ p {
                 font-family: 'Barlow', sans-serif;
                 border-radius: 5px;
                 font-size: 20px;
+                font-weight: 200;
                 transform: translate(30px,10px);
                 box-shadow: 4px 5px 4px 2px rgba(0, 0, 0, 0.231);
                 transition: 200ms;
                 &:hover {
                   background-color: $pink;
                 }
+                &:active {
+                  background-color: #c0243c;
+                }
               }
-              &.hidden {
-                display: none;
-              }
+              // &.hidden {
+              //   display: none;
+              // }
             }
+          }
+          .results-wrapper {
+            width: 600px;
+            color: $light-3;
+            // display: none;
           }
         }
       }
     }
   }
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  z-index: 100;
+  height: 0;
+  font-size: 14px;
+  font-weight: 100;
+  transform: translateY(-30px);
+  color: $light-2;
+}
+
+.selected-tab {
+  background-color: $orange-2!important;
+  // scale: 1.2!important;
+  // transform: translateY(-2px);
+}
+
+.hidden {
+  display: none!important;
 }
