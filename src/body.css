@@ -10,6 +10,10 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%; }
+  :root input::-webkit-outer-spin-button,
+  :root input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0; }
 
 * {
   margin: 0;
@@ -34,6 +38,27 @@ h1, h2, h3, h4, h5, h6 {
 p {
   font-weight: 100; }
 
+.button {
+  cursor: pointer;
+  background-color: #F37027;
+  border: none;
+  height: 50px;
+  width: 110px;
+  font-family: 'Barlow', sans-serif;
+  border-radius: 5px;
+  font-size: 20px;
+  font-weight: 200;
+  transform: translate(30px, 10px);
+  box-shadow: 4px 5px 4px 2px rgba(0, 0, 0, 0.231);
+  transition: 200ms; }
+  .button:hover {
+    background-color: #F32744; }
+  .button:active {
+    background-color: #c0243c; }
+
+.border {
+  border: 1px solid #F37027; }
+
 .wrapper {
   display: flex;
   align-items: center;
@@ -42,14 +67,13 @@ p {
   width: 100%;
   position: relative;
   background-color: #1E1818;
-  background-color: #1E1818;
-  overflow-x: hidden;
-  overflow-y: hidden; }
+  background-color: #1E1818; }
   .wrapper .background-img {
     display: flex;
     position: absolute;
     width: 100%; }
     .wrapper .background-img img {
+      max-height: 100vh;
       width: 100%;
       object-fit: cover;
       opacity: 5%; }
@@ -178,109 +202,137 @@ p {
                 margin-left: 1rem;
                 background-color: #85715f;
                 border-radius: 0px 0px 0px 10px; }
-      .wrapper .inner .main-container .input-wrapper {
+      .wrapper .inner .main-container .tabs-input-wrapper {
         z-index: 999;
-        transform: translateX(-150px);
-        width: 400px;
-        height: 100%;
-        width: 100%; }
-        .wrapper .inner .main-container .input-wrapper .tabs-wrapper {
-          display: flex;
-          justify-content: flex-end;
+        display: flex; }
+        .wrapper .inner .main-container .tabs-input-wrapper .input-wrapper {
+          transform: translateX(-150px);
+          width: 400px;
+          height: 100%;
           width: 100%; }
-          .wrapper .inner .main-container .input-wrapper .tabs-wrapper .tab {
+          .wrapper .inner .main-container .tabs-input-wrapper .input-wrapper .tabs-wrapper {
             display: flex;
             justify-content: flex-end;
-            align-items: center;
-            box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.227);
-            border-radius: 42px 10px 0px 0px;
-            padding-right: 1rem;
-            width: 125px;
-            scale: 1;
-            background-color: #F32744; }
-            .wrapper .inner .main-container .input-wrapper .tabs-wrapper .tab h6 {
-              font-weight: 300;
-              font-size: 20px; }
-          .wrapper .inner .main-container .input-wrapper .tabs-wrapper .tab-info {
-            width: 70px;
-            z-index: 11; }
-          .wrapper .inner .main-container .input-wrapper .tabs-wrapper .tab-1 {
-            z-index: 10;
-            transform: translateX(-10px); }
-          .wrapper .inner .main-container .input-wrapper .tabs-wrapper .tab-2 {
-            z-index: 9;
-            transform: translateX(-20px); }
-          .wrapper .inner .main-container .input-wrapper .tabs-wrapper .tab-3 {
-            z-index: 8;
-            transform: translateX(-30px); }
-          .wrapper .inner .main-container .input-wrapper .tabs-wrapper .tab-4 {
-            z-index: 7;
-            transform: translateX(-40px); }
-        .wrapper .inner .main-container .input-wrapper .input-container {
-          display: flex;
-          flex-direction: column;
-          background-color: #1d1916f7;
-          border-radius: 5px 5px 5px 70px;
-          padding: 2rem 4rem 2rem 3rem;
-          box-shadow: 8px 7px 8px 2px rgba(0, 0, 0, 0.227);
-          height: 345px; }
-          .wrapper .inner .main-container .input-wrapper .input-container .border {
-            border: 1px solid #F37027; }
-          .wrapper .inner .main-container .input-wrapper .input-container form .age-container, .wrapper .inner .main-container .input-wrapper .input-container form .cups-per-week-container, .wrapper .inner .main-container .input-wrapper .input-container form .price-per-cup-container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            color: #D1C9A9;
-            font-size: 20px;
-            font-weight: 100;
-            margin-bottom: .5rem;
-            padding-bottom: .5rem;
-            border-bottom: 1px solid #85715f2d; }
-            .wrapper .inner .main-container .input-wrapper .input-container form .age-container label, .wrapper .inner .main-container .input-wrapper .input-container form .cups-per-week-container label, .wrapper .inner .main-container .input-wrapper .input-container form .price-per-cup-container label {
-              width: 200px; }
-            .wrapper .inner .main-container .input-wrapper .input-container form .age-container input, .wrapper .inner .main-container .input-wrapper .input-container form .cups-per-week-container input, .wrapper .inner .main-container .input-wrapper .input-container form .price-per-cup-container input {
-              background-color: #140f0ebf;
-              border: none;
-              height: 50px;
-              width: 100px;
-              border-radius: 5px;
-              text-align: center;
-              font-size: 25px;
-              font-family: 'Montserrat Alternates', sans-serif;
-              color: #eac8ae;
-              font-size: 18px;
-              box-shadow: inset 3px 4px 6px 2px rgba(0, 0, 0, 0.231); }
-              .wrapper .inner .main-container .input-wrapper .input-container form .age-container input::placeholder, .wrapper .inner .main-container .input-wrapper .input-container form .cups-per-week-container input::placeholder, .wrapper .inner .main-container .input-wrapper .input-container form .price-per-cup-container input::placeholder {
-                color: #85715f98; }
-              .wrapper .inner .main-container .input-wrapper .input-container form .age-container input:focus, .wrapper .inner .main-container .input-wrapper .input-container form .cups-per-week-container input:focus, .wrapper .inner .main-container .input-wrapper .input-container form .price-per-cup-container input:focus {
-                outline: none; }
-              .wrapper .inner .main-container .input-wrapper .input-container form .age-container input:focus::placeholder, .wrapper .inner .main-container .input-wrapper .input-container form .cups-per-week-container input:focus::placeholder, .wrapper .inner .main-container .input-wrapper .input-container form .price-per-cup-container input:focus::placeholder {
-                color: transparent; }
-          .wrapper .inner .main-container .input-wrapper .input-container form .age-container {
-            padding-bottom: 1rem; }
-          .wrapper .inner .main-container .input-wrapper .input-container form .submit-btn-container {
-            display: flex;
-            justify-content: flex-end; }
-            .wrapper .inner .main-container .input-wrapper .input-container form .submit-btn-container input {
+            width: 100%; }
+            .wrapper .inner .main-container .tabs-input-wrapper .input-wrapper .tabs-wrapper .tab {
+              position: relative;
+              z-index: 15;
               cursor: pointer;
-              background-color: #F37027;
-              border: none;
-              height: 50px;
-              width: 110px;
-              font-family: 'Barlow', sans-serif;
-              border-radius: 5px;
+              transition: 200ms;
+              display: flex;
+              justify-content: flex-end;
+              align-items: center;
+              box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.227);
+              border-radius: 42px 10px 0px 0px;
+              padding-right: 1rem;
+              width: 125px;
+              background-color: #F32744; }
+              .wrapper .inner .main-container .tabs-input-wrapper .input-wrapper .tabs-wrapper .tab * {
+                pointer-events: none; }
+              .wrapper .inner .main-container .tabs-input-wrapper .input-wrapper .tabs-wrapper .tab h6 {
+                font-weight: 400;
+                font-size: 20px; }
+              .wrapper .inner .main-container .tabs-input-wrapper .input-wrapper .tabs-wrapper .tab:hover {
+                background-color: #ff5765; }
+            .wrapper .inner .main-container .tabs-input-wrapper .input-wrapper .tabs-wrapper .tab-info {
+              width: 70px;
+              z-index: 11; }
+            .wrapper .inner .main-container .tabs-input-wrapper .input-wrapper .tabs-wrapper .tab-1 {
+              z-index: 10;
+              transform: translateX(-10px); }
+            .wrapper .inner .main-container .tabs-input-wrapper .input-wrapper .tabs-wrapper .tab-2 {
+              z-index: 9;
+              transform: translateX(-20px); }
+            .wrapper .inner .main-container .tabs-input-wrapper .input-wrapper .tabs-wrapper .tab-3 {
+              z-index: 8;
+              transform: translateX(-30px); }
+            .wrapper .inner .main-container .tabs-input-wrapper .input-wrapper .tabs-wrapper .tab-4 {
+              z-index: 7;
+              transform: translateX(-40px); }
+          .wrapper .inner .main-container .tabs-input-wrapper .input-wrapper .input-container {
+            display: flex;
+            background-color: #1d1916f7;
+            border-radius: 5px 5px 5px 70px;
+            padding: 2rem 4rem 2rem 3rem;
+            box-shadow: 8px 7px 8px 2px rgba(0, 0, 0, 0.227);
+            height: 345px; }
+            .wrapper .inner .main-container .tabs-input-wrapper .input-wrapper .input-container form .age-container, .wrapper .inner .main-container .tabs-input-wrapper .input-wrapper .input-container form .cups-per-week-container, .wrapper .inner .main-container .tabs-input-wrapper .input-wrapper .input-container form .price-per-cup-container {
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              color: #D1C9A9;
               font-size: 20px;
-              font-weight: 200;
-              transform: translate(30px, 10px);
-              box-shadow: 4px 5px 4px 2px rgba(0, 0, 0, 0.231);
-              transition: 200ms; }
-              .wrapper .inner .main-container .input-wrapper .input-container form .submit-btn-container input:hover {
-                background-color: #F32744; }
-              .wrapper .inner .main-container .input-wrapper .input-container form .submit-btn-container input:active {
-                background-color: #c0243c; }
-          .wrapper .inner .main-container .input-wrapper .input-container .results-wrapper {
-            width: 600px;
-            color: #E4DDBD; }
+              font-weight: 100;
+              margin-bottom: .5rem;
+              padding-bottom: .5rem;
+              border-bottom: 1px solid #85715f2d; }
+              .wrapper .inner .main-container .tabs-input-wrapper .input-wrapper .input-container form .age-container label, .wrapper .inner .main-container .tabs-input-wrapper .input-wrapper .input-container form .cups-per-week-container label, .wrapper .inner .main-container .tabs-input-wrapper .input-wrapper .input-container form .price-per-cup-container label {
+                width: 200px; }
+              .wrapper .inner .main-container .tabs-input-wrapper .input-wrapper .input-container form .age-container input, .wrapper .inner .main-container .tabs-input-wrapper .input-wrapper .input-container form .cups-per-week-container input, .wrapper .inner .main-container .tabs-input-wrapper .input-wrapper .input-container form .price-per-cup-container input {
+                background-color: #140f0ebf;
+                border: none;
+                height: 50px;
+                width: 100px;
+                border-radius: 5px;
+                text-align: center;
+                font-size: 25px;
+                font-family: 'Montserrat Alternates', sans-serif;
+                color: #eac8ae;
+                font-size: 18px;
+                box-shadow: inset 3px 4px 6px 2px rgba(0, 0, 0, 0.231); }
+                .wrapper .inner .main-container .tabs-input-wrapper .input-wrapper .input-container form .age-container input::placeholder, .wrapper .inner .main-container .tabs-input-wrapper .input-wrapper .input-container form .cups-per-week-container input::placeholder, .wrapper .inner .main-container .tabs-input-wrapper .input-wrapper .input-container form .price-per-cup-container input::placeholder {
+                  color: #85715f98; }
+                .wrapper .inner .main-container .tabs-input-wrapper .input-wrapper .input-container form .age-container input:focus, .wrapper .inner .main-container .tabs-input-wrapper .input-wrapper .input-container form .cups-per-week-container input:focus, .wrapper .inner .main-container .tabs-input-wrapper .input-wrapper .input-container form .price-per-cup-container input:focus {
+                  outline: none; }
+                .wrapper .inner .main-container .tabs-input-wrapper .input-wrapper .input-container form .age-container input:focus::placeholder, .wrapper .inner .main-container .tabs-input-wrapper .input-wrapper .input-container form .cups-per-week-container input:focus::placeholder, .wrapper .inner .main-container .tabs-input-wrapper .input-wrapper .input-container form .price-per-cup-container input:focus::placeholder {
+                  color: transparent; }
+            .wrapper .inner .main-container .tabs-input-wrapper .input-wrapper .input-container form .age-container {
+              padding-bottom: 1rem; }
+            .wrapper .inner .main-container .tabs-input-wrapper .input-wrapper .input-container form .submit-btn-container {
+              display: flex;
+              justify-content: flex-end; }
+            .wrapper .inner .main-container .tabs-input-wrapper .input-wrapper .input-container .results-wrapper {
+              width: 500px;
+              color: #E4DDBD; }
+              .wrapper .inner .main-container .tabs-input-wrapper .input-wrapper .input-container .results-wrapper .calculation-information h3 {
+                font-size: 32px;
+                margin-bottom: 1rem;
+                border-bottom: 1px solid #d1c9a94b;
+                width: 300px; }
+              .wrapper .inner .main-container .tabs-input-wrapper .input-wrapper .input-container .results-wrapper .calculation-information .p-1 {
+                margin-bottom: 1rem; }
+              .wrapper .inner .main-container .tabs-input-wrapper .input-wrapper .input-container .results-wrapper .calculation-information p {
+                width: 500px; }
+                .wrapper .inner .main-container .tabs-input-wrapper .input-wrapper .input-container .results-wrapper .calculation-information p .user-input-value, .wrapper .inner .main-container .tabs-input-wrapper .input-wrapper .input-container .results-wrapper .calculation-information p .pounds {
+                  color: #F37027;
+                  font-weight: 400; }
+            .wrapper .inner .main-container .tabs-input-wrapper .input-wrapper .input-container .button-wrapper {
+              display: flex;
+              justify-content: flex-end;
+              align-items: flex-end;
+              margin-bottom: 1rem; }
+        .wrapper .inner .main-container .tabs-input-wrapper .calculation-info-tab {
+          cursor: pointer;
+          transition: 200ms;
+          display: flex;
+          justify-content: flex-end;
+          align-items: center;
+          box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.227);
+          border-radius: 0px 30px 6px 0px;
+          padding-right: 1rem;
+          width: 40px;
+          height: 60px;
+          background-color: #FFA41B;
+          transform: translate(-150px, 280px); }
+          .wrapper .inner .main-container .tabs-input-wrapper .calculation-info-tab * {
+            pointer-events: none; }
+          .wrapper .inner .main-container .tabs-input-wrapper .calculation-info-tab h6 {
+            color: #1E1818;
+            font-weight: 600;
+            font-size: 20px;
+            color: #1E1818; }
+          .wrapper .inner .main-container .tabs-input-wrapper .calculation-info-tab:hover {
+            background-color: #f73956; }
 
 footer {
   display: flex;
@@ -294,7 +346,11 @@ footer {
   color: #D1C9A9; }
 
 .selected-tab {
-  background-color: #F37027 !important; }
+  background-color: #F37027 !important;
+  cursor: default !important;
+  position: relative;
+  z-index: 20;
+  pointer-events: none; }
 
 .hidden {
   display: none !important; }

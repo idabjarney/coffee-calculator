@@ -50,57 +50,80 @@
               </div>
             </div>
           </div>
-          <div class="input-wrapper">
-            <div class="tabs-wrapper hidden">
-              <div class="tab tab-info selected-tab">
-                <span class="material-symbols-outlined">
-                  info
-                  </span>
+          <div class="tabs-input-wrapper">
+            <div class="input-wrapper">
+              <div class="tabs-wrapper hidden">
+                <div class="tab tab-info selected-tab" data-showtab="calculation-information">
+                  <span class="material-symbols-outlined">
+                    info
+                    </span>
+                </div>
+                <div class="tab tab-1" data-showtab="x-year-results" data-years="5">
+                  <h6>5 YEARS</h6>
+                </div>
+                <div class="tab tab-2" data-showtab="x-year-results" data-years="10">
+                  <h6>10 YEARS</h6>
+                </div>
+                <div class="tab tab-3" data-showtab="x-year-results" data-years="15">
+                  <h6>15 YEARS</h6>
+                </div>
+                <div class="tab tab-4" data-showtab="x-year-results" data-years="retirement">
+                  <h6>AT AGE 67</h6>
+                </div>
               </div>
-              <div class="tab tab-1">
-                <h6>5 YEARS</h6>
-              </div>
-              <div class="tab tab-2">
-                <h6>10 YEARS</h6>
-              </div>
-              <div class="tab tab-3">
-                <h6>15 YEARS</h6>
-              </div>
-              <div class="tab tab-4">
-                <h6>AT AGE 67</h6>
+              <div class="input-container">
+                <form class="calculator-form">
+                  <div class="input age-container">
+                    <label for="age">Your age?</label>
+                    <input class="user-input age-input" name="age" type="number" placeholder="26" pattern="[0-9]+" required>
+                  </div>
+                  <div class="input cups-per-week-container">
+                    <label for="cups">Estimated cups per week?</label>
+                    <input class="user-input cups-per-week-input" name="cups" type="number" placeholder="14" pattern="[0-9]+" required>
+                  </div>
+                  <div class="input price-per-cup-container">
+                    <label for="cups">Price per coffee of choice? (£)</label>
+                    <input class="user-input coffee-price-input" name="cups" type="number" placeholder="£ 3.9" pattern="[0-9]+" step=".01" required>
+                  </div>
+                  <div class="submit-btn-container ">
+                    <input class="button submit-btn" type="submit" value="SUBMIT">
+                  </div>
+                </form>
+                <div class="results-wrapper hidden">
+                  <div class="calculation-information active">
+                    <h3>
+                      The run down
+                    </h3>
+                    <p class="p-1">
+                      According to  the information you have given, every week you spend  on average <span class="pounds">£</span><span class="user-input-value weekly-cost-value"></span> on buying coffee for <span class="pounds">£</span><span class="user-input-value cup-input-value"></span> a cup. This would add up to <span class="pounds">£</span><span class="user-input-value annual-cost-value"></span> annually.
+                    </p>
+                    <p>
+                      Select the tabs above to find out what you could be saving over time if you started today...Or if you wish to know how the calculations work click the questionmark tab on the right hand side.
+                    </p>
+                  </div>
+                  <div class="x-year-results hidden">
+                    <h3>
+                      In <span class="x-year">5</span> years
+                    </h3>
+                    <p>If you were to, instead of buying coffee, to put the money into a standard savings account with a 2.84% interest rate..</p>
+                    <h3>
+                      Then you could save
+                    </h3>
+                    <h2>£ <span class="x-year-savings-result">38,534.64</span></h2>
+                  </div>
+                  <div class="calculation-details hidden">
+                    <p>
+                      calcykfds
+                    </p>
+                  </div>
+                </div>
+                <div class="button-wrapper hidden">
+                  <button class="button try-again-btn">TRY AGAIN</button>
+                </div>
               </div>
             </div>
-            <div class="input-container">
-              <form>
-                <div class="input age-container">
-                  <label for="age">Your age?</label>
-                  <input class="age-input" name="age" type="number" placeholder="26">
-                </div>
-                <div class="input cups-per-week-container">
-                  <label for="cups">Estimated cups per week?</label>
-                  <input class="cups-per-week-input" name="cups" type="number" placeholder="14">
-                </div>
-                <div class="input price-per-cup-container">
-                  <label for="cups">Price per coffee of choice? (£)</label>
-                  <input class="coffee-price-input" name="cups" type="number" placeholder="£ 3.9">
-                </div>
-                <div class="submit-btn-container ">
-                  <input class="submit-btn" type="submit" value="SUBMIT">
-                </div>
-              </form>
-              <div class="results-wrapper hidden">
-                <div class="calculation-information">
-                  <h3>
-                    The run down
-                  </h3>
-                  <p>
-                    According to  the information you have given, every week you spend  on average £46.7 on buying coffee for £<span class="cup-input-value">3.4</span> a cup. This would add up to £2,428.4 annually.
-                  </p>
-                  <p>
-                    Select the tabs above to find out what you could be saving over time if you started today...Or if you wish to know how the calculations work click the questionmark tab on the right hand side.
-                  </p>
-                </div>
-              </div>
+            <div class="tab calculation-info-tab hidden" data-showtab="calculation-details">
+              <h6>?</h6>
             </div>
           </div>
         </div>

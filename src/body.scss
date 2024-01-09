@@ -24,6 +24,11 @@ $yellow: #FFA41B;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
 }
 
 * {
@@ -31,8 +36,6 @@ $yellow: #FFA41B;
   padding: 0;
   box-sizing: border-box;
   // max-width: 100%;
-    // overflow-x: hidden;
-    // overflow-y: hidden;
 }
 
 a {
@@ -56,23 +59,48 @@ p {
 }
 
 
+.button {
+  cursor: pointer;
+  background-color: $orange-2;
+  border: none;
+  height: 50px;
+  width: 110px;
+  font-family: 'Barlow', sans-serif;
+  border-radius: 5px;
+  font-size: 20px;
+  font-weight: 200;
+  transform: translate(30px,10px);
+  box-shadow: 4px 5px 4px 2px rgba(0, 0, 0, 0.231);
+  transition: 200ms;
+  &:hover {
+    background-color: $pink;
+  }
+  &:active {
+    background-color: #c0243c;
+  }
+}
+
+.border {
+  border: 1px solid $orange-2;
+}
+
+
 .wrapper {
   display: flex;
   align-items: center;
   justify-content: center;
-height: 100vh;
+  height: 100vh;
   width: 100%;
   position: relative;
   background-color: $brown;
   // background-color: #110f0f;
   background-color: $brown;
-  overflow-x: hidden;
-  overflow-y: hidden;
   .background-img {
     display: flex;
     position: absolute;
     width: 100%;
     img {
+      max-height: 100vh;
       width: 100%;
       object-fit: cover;
       opacity: 5%;
@@ -232,142 +260,175 @@ height: 100vh;
           }
         }
       }
-      .input-wrapper {
+      .tabs-input-wrapper {
         z-index: 999;
-        transform: translateX(-150px);
-        width: 400px;
-        height: 100%;
-        width: 100%;
-        .tabs-wrapper {
-          display: flex;
-          justify-content: flex-end;
+        display: flex;
+        .input-wrapper {
+          transform: translateX(-150px);
+          width: 400px;
+          height: 100%;
           width: 100%;
-
-          .tab {
+          .tabs-wrapper {
             display: flex;
             justify-content: flex-end;
-            align-items: center;
-            box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.227);
-            border-radius: 42px 10px 0px 0px;
-            padding-right:1rem ;
-            width: 125px;
-            scale: 1;
-            background-color: $pink;
-            h6 {
-              font-weight: 300;
-              font-size: 20px;
-            }
-          }
-
-          .tab-info {
-            width: 70px;
-            z-index: 11;
-          }
-          .tab-1 {
-            z-index: 10;
-            transform: translateX(-10px);
-
-          }
-          .tab-2 {
-            z-index: 9;
-            transform: translateX(-20px);
-          }
-          .tab-3 {
-            z-index: 8;
-            transform: translateX(-30px);
-          }
-          .tab-4 {
-            z-index: 7;
-            transform: translateX(-40px);
-          }
-        }
-        .input-container {
-          display: flex;
-          flex-direction: column;
-          background-color: #1d1916f7;
-          border-radius: 5px 5px 5px 70px;
-          padding: 2rem 4rem 2rem 3rem;
-          box-shadow: 8px 7px 8px 2px rgba(0, 0, 0, 0.227);
-          height: 345px;
-          .border {
-            border: 1px solid $orange-2;
-          }
-          form {
-            .age-container, .cups-per-week-container, .price-per-cup-container {
-              display: flex;
-              justify-content: space-between;
-              align-items: center;
-              color: $light-2;
-              font-size: 20px;
-              font-weight: 100;
-              margin-bottom: .5rem;
-              padding-bottom: .5rem;
-              border-bottom: 1px solid #85715f2d;
-              label {
-                width: 200px;
-              }
-              input {
-                background-color: #140f0ebf;
-                border: none;
-                height: 50px;
-                width: 100px;
-                border-radius: 5px;
-                text-align: center;
-                font-size: 25px;
-                // margin-right: 1rem;
-                font-family: 'Montserrat Alternates', sans-serif;
-                color: #eac8ae;
-                font-size: 18px;
-                box-shadow: inset 3px 4px 6px 2px rgba(0, 0, 0, 0.231);
-                &::placeholder {
-                  color: #85715f98;
-                }
-                &:focus {
-                  outline: none;
-                }
-                &:focus::placeholder {
-                  color: transparent;
-                }
-              }
-              // &.hidden {
-              //   display: none;
-              // }
-            }
-            .age-container {
-              padding-bottom: 1rem;
-            }
-            .submit-btn-container {
+            width: 100%;
+  
+            .tab {
+              position: relative;
+              z-index: 15;
+              cursor: pointer;
+              transition: 200ms;
               display: flex;
               justify-content: flex-end;
-              input {
-                cursor: pointer;
-                background-color: $orange-2;
-                border: none;
-                height: 50px;
-                width: 110px;
-                font-family: 'Barlow', sans-serif;
-                border-radius: 5px;
-                font-size: 20px;
-                font-weight: 200;
-                transform: translate(30px,10px);
-                box-shadow: 4px 5px 4px 2px rgba(0, 0, 0, 0.231);
-                transition: 200ms;
-                &:hover {
-                  background-color: $pink;
-                }
-                &:active {
-                  background-color: #c0243c;
-                }
+              align-items: center;
+              box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.227);
+              border-radius: 42px 10px 0px 0px;
+              padding-right:1rem ;
+              width: 125px;
+              background-color: $pink;
+              * {
+                pointer-events: none;
               }
-              // &.hidden {
-              //   display: none;
-              // }
+              h6 {
+                font-weight: 400;
+                font-size: 20px;
+              }
+              &:hover {
+                background-color: #ff5765;
+
+              }
+            }
+  
+            .tab-info {
+              width: 70px;
+              z-index: 11;
+            }
+            .tab-1 {
+              z-index: 10;
+              transform: translateX(-10px);
+  
+            }
+            .tab-2 {
+              z-index: 9;
+              transform: translateX(-20px);
+            }
+            .tab-3 {
+              z-index: 8;
+              transform: translateX(-30px);
+            }
+            .tab-4 {
+              z-index: 7;
+              transform: translateX(-40px);
             }
           }
-          .results-wrapper {
-            width: 600px;
-            color: $light-3;
-            // display: none;
+          .input-container {
+            display: flex;
+            // flex-direction: column;
+            background-color: #1d1916f7;
+            border-radius: 5px 5px 5px 70px;
+            padding: 2rem 4rem 2rem 3rem;
+            box-shadow: 8px 7px 8px 2px rgba(0, 0, 0, 0.227);
+            height: 345px;
+            form {
+              .age-container, .cups-per-week-container, .price-per-cup-container {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                color: $light-2;
+                font-size: 20px;
+                font-weight: 100;
+                margin-bottom: .5rem;
+                padding-bottom: .5rem;
+                border-bottom: 1px solid #85715f2d;
+                label {
+                  width: 200px;
+                }
+                input {
+                  background-color: #140f0ebf;
+                  border: none;
+                  height: 50px;
+                  width: 100px;
+                  border-radius: 5px;
+                  text-align: center;
+                  font-size: 25px;
+                  // margin-right: 1rem;
+                  font-family: 'Montserrat Alternates', sans-serif;
+                  color: #eac8ae;
+                  font-size: 18px;
+                  box-shadow: inset 3px 4px 6px 2px rgba(0, 0, 0, 0.231);
+                  &::placeholder {
+                    color: #85715f98;
+                  }
+                  &:focus {
+                    outline: none;
+                  }
+                  &:focus::placeholder {
+                    color: transparent;
+                  }
+                }
+              }
+              .age-container {
+                padding-bottom: 1rem;
+              }
+              .submit-btn-container {
+                display: flex;
+                justify-content: flex-end;
+              }
+            }
+            .results-wrapper {
+              width: 500px;
+              color: $light-3;
+              .calculation-information {
+                h3 {
+                  font-size: 32px;
+                  margin-bottom: 1rem;
+                  border-bottom: 1px solid #d1c9a94b;
+                  width: 300px;
+                }
+                .p-1 {
+                  margin-bottom: 1rem;
+                }
+                p {
+                  width: 500px;
+                  .user-input-value, .pounds {
+                    color: $orange-2;
+                    font-weight: 400;
+                  }
+                }
+              }
+            }
+            .button-wrapper {
+              display: flex;
+              justify-content: flex-end;
+              align-items: flex-end;
+              margin-bottom: 1rem;
+            }
+          }
+        }
+        .calculation-info-tab {
+          cursor: pointer;
+          transition: 200ms;
+          display: flex;
+          justify-content: flex-end;
+          align-items: center;
+          box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.227);
+          border-radius: 0px 30px 6px 0px;
+          padding-right:1rem;
+          width: 40px;
+          height: 60px;
+          background-color: $yellow;
+          transform: translate(-150px, 280px);
+          * {
+            pointer-events: none;
+          }
+          h6 {
+            color: #1E1818;
+            font-weight: 600;
+            font-size: 20px;
+            color: #1E1818;
+          }
+          &:hover {
+            background-color: #f73956;
           }
         }
       }
@@ -389,8 +450,10 @@ footer {
 
 .selected-tab {
   background-color: $orange-2!important;
-  // scale: 1.2!important;
-  // transform: translateY(-2px);
+  cursor: default!important;
+  position: relative;
+  z-index: 20;
+  pointer-events: none;
 }
 
 .hidden {
