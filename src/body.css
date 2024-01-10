@@ -36,7 +36,8 @@ h1, h2, h3, h4, h5, h6 {
     color: #F32744; }
 
 p {
-  font-weight: 100; }
+  font-weight: 100;
+  font-size: 17px; }
 
 .button {
   cursor: pointer;
@@ -58,6 +59,101 @@ p {
 
 .border {
   border: 1px solid #F37027; }
+
+@media only screen and (max-width: 1176px) {
+  .wrapper .background-img {
+    height: 100vh; }
+  .wrapper .background-vector img {
+    height: 75%; }
+  .wrapper .line-vector img {
+    height: 76%; }
+  .wrapper .inner {
+    overflow-x: hidden; } }
+
+@media only screen and (max-width: 1092px) {
+  .wrapper .inner .main-container {
+    overflow-x: hidden; }
+    .wrapper .inner .main-container .tabs-input-wrapper .input-wrapper .tabs-wrapper .tab {
+      width: 97px !important;
+      padding-right: 0.5rem !important; }
+      .wrapper .inner .main-container .tabs-input-wrapper .input-wrapper .tabs-wrapper .tab h6 {
+        font-size: 17px !important; }
+    .wrapper .inner .main-container .tabs-input-wrapper .input-wrapper .tabs-wrapper .tab-info {
+      width: 50px !important; }
+    .wrapper .inner .main-container .tabs-input-wrapper .input-wrapper .input-container {
+      padding: 1rem 3rem 3rem 2rem !important; }
+      .wrapper .inner .main-container .tabs-input-wrapper .input-wrapper .input-container .results-wrapper {
+        width: 400px !important; }
+        .wrapper .inner .main-container .tabs-input-wrapper .input-wrapper .input-container .results-wrapper .calculation-information h3 {
+          font-size: 28px !important; }
+        .wrapper .inner .main-container .tabs-input-wrapper .input-wrapper .input-container .results-wrapper .calculation-information p {
+          width: 350px !important;
+          font-size: 16px !important; }
+        .wrapper .inner .main-container .tabs-input-wrapper .input-wrapper .input-container .results-wrapper .x-year-results h3 {
+          font-size: 28px !important; }
+        .wrapper .inner .main-container .tabs-input-wrapper .input-wrapper .input-container .results-wrapper .x-year-results h4 {
+          font-size: 20px !important; }
+        .wrapper .inner .main-container .tabs-input-wrapper .input-wrapper .input-container .results-wrapper .x-year-results p {
+          font-size: 17px !important;
+          width: 350px !important; }
+        .wrapper .inner .main-container .tabs-input-wrapper .input-wrapper .input-container .results-wrapper .x-year-results h2 span {
+          font-size: 30px !important; }
+        .wrapper .inner .main-container .tabs-input-wrapper .input-wrapper .input-container .results-wrapper .calculation-details {
+          margin-top: 0.5rem !important; }
+      .wrapper .inner .main-container .tabs-input-wrapper .input-wrapper .input-container .button-wrapper {
+        margin-bottom: 1rem !important; }
+    .wrapper .inner .main-container .tabs-input-wrapper .calculation-info-tab {
+      width: 30px !important; }
+      .wrapper .inner .main-container .tabs-input-wrapper .calculation-info-tab h6 {
+        transform: translateX(0.3rem); } }
+
+@media only screen and (max-width: 835px) {
+  .wrapper .inner .main-container .coffee-cup-container {
+    transform: translateX(-70px) !important; }
+  .wrapper .inner .main-container .tabs-input-wrapper {
+    transform: translateX(-90px); }
+    .wrapper .inner .main-container .tabs-input-wrapper .input-wrapper .tabs-wrapper .tab {
+      width: 57px !important;
+      padding-right: 0.5rem !important; }
+      .wrapper .inner .main-container .tabs-input-wrapper .input-wrapper .tabs-wrapper .tab h6 {
+        display: none !important; }
+      .wrapper .inner .main-container .tabs-input-wrapper .input-wrapper .tabs-wrapper .tab h5 {
+        display: block !important;
+        font-weight: 400;
+        font-size: 20px; }
+    .wrapper .inner .main-container .tabs-input-wrapper .input-wrapper .tabs-wrapper .tab-info {
+      width: 50px !important; }
+    .wrapper .inner .main-container .tabs-input-wrapper .input-wrapper .tabs-wrapper .tab-4 {
+      width: 75px !important; }
+    .wrapper .inner .main-container .tabs-input-wrapper .input-wrapper .input-container {
+      padding: 1rem 3rem 2-rem 2rem !important; }
+      .wrapper .inner .main-container .tabs-input-wrapper .input-wrapper .input-container .results-wrapper {
+        width: 350px !important; }
+        .wrapper .inner .main-container .tabs-input-wrapper .input-wrapper .input-container .results-wrapper .calculation-information h3 {
+          font-size: 28px !important; }
+        .wrapper .inner .main-container .tabs-input-wrapper .input-wrapper .input-container .results-wrapper .calculation-information p {
+          width: 350px !important;
+          font-size: 16px !important; }
+        .wrapper .inner .main-container .tabs-input-wrapper .input-wrapper .input-container .results-wrapper .x-year-results p {
+          width: 300px !important; }
+        .wrapper .inner .main-container .tabs-input-wrapper .input-wrapper .input-container .results-wrapper .x-year-results h2 span {
+          font-size: 30px !important; }
+        .wrapper .inner .main-container .tabs-input-wrapper .input-wrapper .input-container .results-wrapper .calculation-details p {
+          font-size: 14px !important; } }
+
+@media only screen and (max-width: 715px) {
+  .wrapper .inner .heading-container {
+    transform: translate(-100px, 30px) !important;
+    width: 300px !important; }
+    .wrapper .inner .heading-container h1 {
+      font-size: 26px; }
+      .wrapper .inner .heading-container h1 .savings {
+        font-size: 37px !important;
+        transform: translate(240px, -5px) !important; }
+  .wrapper .inner .main-container .coffee-cup-container {
+    transform: translateX(-100px) !important; }
+  .wrapper .inner .main-container .tabs-input-wrapper {
+    transform: translateX(-180px); } }
 
 .wrapper {
   display: flex;
@@ -118,7 +214,8 @@ p {
       .wrapper .inner .main-container .coffee-cup-container {
         display: flex;
         flex-direction: column;
-        align-items: center; }
+        align-items: center;
+        transform: translateX(35px); }
         .wrapper .inner .main-container .coffee-cup-container .cup-lid-dent {
           width: 52px;
           height: 15px;
@@ -206,7 +303,7 @@ p {
         z-index: 999;
         display: flex; }
         .wrapper .inner .main-container .tabs-input-wrapper .input-wrapper {
-          transform: translateX(-150px);
+          transform: translateX(-115px);
           width: 400px;
           height: 100%;
           width: 100%; }
@@ -232,8 +329,8 @@ p {
               .wrapper .inner .main-container .tabs-input-wrapper .input-wrapper .tabs-wrapper .tab h6 {
                 font-weight: 400;
                 font-size: 20px; }
-              .wrapper .inner .main-container .tabs-input-wrapper .input-wrapper .tabs-wrapper .tab:hover {
-                background-color: #ff5765; }
+              .wrapper .inner .main-container .tabs-input-wrapper .input-wrapper .tabs-wrapper .tab:hover, .wrapper .inner .main-container .tabs-input-wrapper .input-wrapper .tabs-wrapper .tab:active {
+                background-color: #97242d; }
             .wrapper .inner .main-container .tabs-input-wrapper .input-wrapper .tabs-wrapper .tab-info {
               width: 70px;
               z-index: 11; }
@@ -251,11 +348,11 @@ p {
               transform: translateX(-40px); }
           .wrapper .inner .main-container .tabs-input-wrapper .input-wrapper .input-container {
             display: flex;
+            flex-direction: column;
             background-color: #1d1916f7;
             border-radius: 5px 5px 5px 70px;
             padding: 2rem 4rem 2rem 3rem;
-            box-shadow: 8px 7px 8px 2px rgba(0, 0, 0, 0.227);
-            height: 345px; }
+            box-shadow: 8px 7px 8px 2px rgba(0, 0, 0, 0.227); }
             .wrapper .inner .main-container .tabs-input-wrapper .input-wrapper .input-container form .age-container, .wrapper .inner .main-container .tabs-input-wrapper .input-wrapper .input-container form .cups-per-week-container, .wrapper .inner .main-container .tabs-input-wrapper .input-wrapper .input-container form .price-per-cup-container {
               display: flex;
               justify-content: space-between;
@@ -292,7 +389,7 @@ p {
               display: flex;
               justify-content: flex-end; }
             .wrapper .inner .main-container .tabs-input-wrapper .input-wrapper .input-container .results-wrapper {
-              width: 500px;
+              width: 600px;
               color: #E4DDBD; }
               .wrapper .inner .main-container .tabs-input-wrapper .input-wrapper .input-container .results-wrapper .calculation-information h3 {
                 font-size: 32px;
@@ -306,11 +403,28 @@ p {
                 .wrapper .inner .main-container .tabs-input-wrapper .input-wrapper .input-container .results-wrapper .calculation-information p .user-input-value, .wrapper .inner .main-container .tabs-input-wrapper .input-wrapper .input-container .results-wrapper .calculation-information p .pounds {
                   color: #F37027;
                   font-weight: 400; }
+              .wrapper .inner .main-container .tabs-input-wrapper .input-wrapper .input-container .results-wrapper .x-year-results p, .wrapper .inner .main-container .tabs-input-wrapper .input-wrapper .input-container .results-wrapper .x-year-results h3 {
+                margin-bottom: 1rem; }
+              .wrapper .inner .main-container .tabs-input-wrapper .input-wrapper .input-container .results-wrapper .x-year-results h3 {
+                font-size: 32px;
+                border-bottom: 1px solid #d1c9a94b;
+                width: 300px; }
+                .wrapper .inner .main-container .tabs-input-wrapper .input-wrapper .input-container .results-wrapper .x-year-results h3 span {
+                  color: #D1C9A9;
+                  font-size: 25px;
+                  font-weight: 400; }
+              .wrapper .inner .main-container .tabs-input-wrapper .input-wrapper .input-container .results-wrapper .x-year-results h4 {
+                margin-top: 2rem;
+                font-size: 22px; }
+              .wrapper .inner .main-container .tabs-input-wrapper .input-wrapper .input-container .results-wrapper .x-year-results h2 span {
+                font-size: 36px; }
+              .wrapper .inner .main-container .tabs-input-wrapper .input-wrapper .input-container .results-wrapper .calculation-details p {
+                font-size: 15px;
+                margin-bottom: 1rem; }
             .wrapper .inner .main-container .tabs-input-wrapper .input-wrapper .input-container .button-wrapper {
               display: flex;
               justify-content: flex-end;
-              align-items: flex-end;
-              margin-bottom: 1rem; }
+              align-items: flex-end; }
         .wrapper .inner .main-container .tabs-input-wrapper .calculation-info-tab {
           cursor: pointer;
           transition: 200ms;
@@ -320,19 +434,20 @@ p {
           box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.227);
           border-radius: 0px 30px 6px 0px;
           padding-right: 1rem;
-          width: 40px;
+          width: 30px;
           height: 60px;
           background-color: #FFA41B;
-          transform: translate(-150px, 280px); }
+          transform: translate(-115px, 280px); }
           .wrapper .inner .main-container .tabs-input-wrapper .calculation-info-tab * {
             pointer-events: none; }
           .wrapper .inner .main-container .tabs-input-wrapper .calculation-info-tab h6 {
             color: #1E1818;
             font-weight: 600;
             font-size: 20px;
-            color: #1E1818; }
-          .wrapper .inner .main-container .tabs-input-wrapper .calculation-info-tab:hover {
-            background-color: #f73956; }
+            color: #1E1818;
+            transform: translateX(0.3rem); }
+          .wrapper .inner .main-container .tabs-input-wrapper .calculation-info-tab:hover, .wrapper .inner .main-container .tabs-input-wrapper .calculation-info-tab:active {
+            background-color: #97242d; }
 
 footer {
   display: flex;
