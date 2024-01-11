@@ -1,6 +1,5 @@
 import './body.scss'
 
-const inputContainers: NodeList = document.querySelectorAll('.input');
 const ageInput: HTMLInputElement = document.querySelector('.age-input');
 const cupsPerWeekInput: HTMLInputElement = document.querySelector('.cups-per-week-input');
 const coffePriceInput: HTMLInputElement = document.querySelector('.coffee-price-input');
@@ -17,13 +16,11 @@ const tabs: HTMLDivElement[] = Array.from(document.querySelectorAll('.tab'));
 const interestRate: number = 0.0284; // percentage
 const inflationRate: number = 0.024; // percentage
 const pensionAge: number = 67;
-const weeks: number = 52;
 let cupsPerWeek: number;
 let userAge: number;
 let coffeeCupPrice: number ; // £
 
 
-const annualNumberOfCups: number = weeks * cupsPerWeek;
 
 
 form.addEventListener('submit', (e) => {
