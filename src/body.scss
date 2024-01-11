@@ -101,65 +101,14 @@ p {
       }
     }
     .inner {
-      .heading-container {
-
-      }
       overflow-x: hidden;
-      .main-container {
-        .tabs-input-wrapper {
-          .input-wrapper {
-            .tabs-wrapper {
-
-            }
-            .input-container {
-              form {
-
-              }
-              .results-wrapper {
-                .calculation-information {
-
-                }
-                .x-year-results {
-
-                }
-                .calculation-details {
-
-                }
-              }
-              .button-wrapper {
-
-              }
-            }
-          }
-          .calculation-info-tab {
-
-          }
-        }
-      }
     }
   }
 }
 @media only screen and (max-width: 1092px) {
   .wrapper {
-    .background-img {
-
-    }
-    .background-vector {
-      img {
-
-      }
-    }
-    .line-vector {
-      img {
-
-      }
-    }
     .inner {
-      .heading-container {
-
-      }
       .main-container {
-        overflow-x: hidden;
         .tabs-input-wrapper {
           .input-wrapper {
             .tabs-wrapper {
@@ -175,10 +124,7 @@ p {
               }
             }
             .input-container {
-              padding: 1rem 3rem 3rem 2rem!important;
-              form {
-                
-              }
+              padding: 1rem 3rem 2rem 2rem!important;
               .results-wrapper {
                 width: 400px!important; 
                 .calculation-information {
@@ -231,23 +177,7 @@ p {
 }
 @media only screen and (max-width: 835px) {
   .wrapper {
-    .background-img {
-
-    }
-    .background-vector {
-      img {
-
-      }
-    }
-    .line-vector {
-      img {
-
-      }
-    }
     .inner {
-      .heading-container {
-
-      }
       .main-container {
         .coffee-cup-container {
           transform: translateX(-70px)!important;
@@ -292,23 +222,14 @@ p {
                   }
                 }
                 .x-year-results {
-                  h3 {
-                    // font-size: 28px!important;
-                  }
-                  h4 {
-                    // font-size: 20px!important;
-                  }
                   p {
-                    // font-size: 17px!important;
                     width: 300px!important; 
-
                   }
                   h2 {
                     span {
                       font-size: 30px!important;
                     }
                   }
-
                 }
                 .calculation-details {
                   p {
@@ -316,15 +237,6 @@ p {
                   }
                 }
               }
-              .button-wrapper {
-                // margin-bottom: 1rem!important;
-              }
-            }
-          }
-          .calculation-info-tab {
-            // width: 30px !important;
-            h6 {
-              // transform: translateX(.3rem);
             }
           }
         }
@@ -334,22 +246,36 @@ p {
 }
 @media only screen and (max-width: 715px) {
   .wrapper {
-    .background-img {
-
-    }
-    .background-vector {
-      img {
-
-      }
-    }
-    .line-vector {
-      img {
-
-      }
-    }
     .inner {
       .heading-container {
-        transform: translate(-100px, 30px)!important;
+        transform: translate(0px, 30px)!important;
+        width: 320px!important;
+        h1 {
+          font-size: 28px;
+          .savings {
+            font-size: 40px!important;
+            transform: translate(240px, -5px)!important;
+
+          }
+        }
+      }
+      .main-container {
+        .coffee-cup-container {
+          transform: translateX(-100px)!important;
+        }
+        .tabs-input-wrapper {
+          transform: translateX(-190px)!important;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 595px) {
+  .wrapper {
+    .inner {
+      .heading-container {
+        transform: translate(-0px, 30px)!important;
         width: 300px!important;
         h1 {
           font-size: 26px;
@@ -365,79 +291,233 @@ p {
           transform: translateX(-100px)!important;
         }
         .tabs-input-wrapper {
-          transform: translateX(-180px);
+          transform: translateX(-240px)!important;
           .input-wrapper {
-            .tabs-wrapper {
-              .tab {
-                // width: 57px!important;
-                // padding-right: .5rem!important;
-                h6 {
-                  // display: none !important;
-                }
-                h5 {
-                  // display: block!important;
-                  // font-weight: 400;
-                  // font-size: 20px;
-                }
-              }
-              .tab-info {
-                // width: 50px!important;
-              }
-              .tab-4 {
-                // width: 75px!important;
-              }
-            }
             .input-container {
-              // padding: 1rem 3rem 2-rem 2rem!important;
-              form {
-                
-              }
+              padding: 1rem 3rem .5rem 2rem!important;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 560px) {
+  .wrapper {
+    .inner {
+      .heading-container {
+        transform: translate(-90px, 30px)!important;
+        width: 300px!important;
+        margin-top: 1rem!important;
+        h1 {
+          font-size: 26px;
+          .savings {
+            font-size: 37px!important;
+            transform: translate(240px, -5px)!important;
+          }
+        }
+      }
+      .main-container {
+        .coffee-cup-container {
+          transform: translateX(-100px)!important;
+        }
+        .tabs-input-wrapper {
+          transform: translateX(-220px);
+          width: 100%!important;
+          .input-wrapper {
+            .input-container {
               .results-wrapper {
-                // width: 350px!important; 
+                width: 320px!important;
                 .calculation-information {
                   h3 {
-                    // font-size: 28px!important;
+                    font-size: 26px!important;
                   }
                   p {
-                    // width: 350px!important; 
-                    // font-size: 16px!important;
+                    font-size: 15px!important;
                   }
                 }
                 .x-year-results {
                   h3 {
-                    // font-size: 28px!important;
+                    font-size: 26px!important;
                   }
                   h4 {
-                    // font-size: 20px!important;
+                    font-size: 19px!important;
                   }
                   p {
-                    // font-size: 17px!important;
-                    // width: 300px!important; 
-
+                    font-size: 16px!important;
                   }
-                  h2 {
-                    span {
-                      // font-size: 30px!important;
-                    }
-                  }
-
                 }
-                .calculation-details {
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 513px) {
+  .wrapper {
+    .inner {
+      .heading-container {
+        transform: translate(-110px, 30px)!important;
+        width: 300px!important;
+        margin-top: 1rem!important;
+        h1 {
+          font-size: 26px;
+          .savings {
+            font-size: 37px!important;
+            transform: translate(240px, -5px)!important;
+
+          }
+        }
+      }
+      .main-container {
+        .coffee-cup-container {
+          transform: translateX(-60px)!important;
+          .cup-lid-dent {
+            width: 40px!important;
+            height: 10px!important;
+            transform: translate(-80px, 22px)!important;
+          }
+          .cup-lid-top {
+            width: 260px!important;
+          }
+          .cup-lid-wrapper {
+            .cup-lid {
+              width: 300px!important;
+              height: 70px!important;
+              .cup-lid-shading-wrapper {
+                .cup-lid-shading {
+                  height: 65px!important;
+                }
+              }
+            }
+          }
+          .cup-main-wrapper {
+            .cup-main {
+              width: 270px!important;
+              height: 460px!important;
+              .cup-main-shading-wrapper {
+                .cup-main-shading-1 {
+                  height: 460px!important;
+                }
+                .cup-main-shading-2 {
+                  height: 460px!important;
+                  
+                }
+              }
+            }
+          }
+          .cup-bottom-wrapper {
+            .cup-bottom {
+              width: 220px!important;
+            }
+          }
+        }
+        .tabs-input-wrapper {
+          transform: translateX(-150px)!important;
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 475px) {
+  .wrapper {
+    .inner {
+      .heading-container {
+        h1 {
+          font-size: 24px;
+          .savings {
+            font-size: 32px!important;
+            transform: translate(200px, -5px)!important;
+
+          }
+        }
+      }
+      .main-container {
+        .tabs-input-wrapper {
+          transform: translateX(-135px)!important;
+          width: 90%;
+          .input-wrapper {
+            .input-container {
+              padding: 1rem 1rem 2rem 1rem!important;
+              form {
+                .age-container, .cups-per-week-container, .price-per-cup-container {
+                  font-size: 18px!important;
+                }
+                .user-input {
+                  width: 80px!important;
+                }
+                .submit-btn-container {
+                  .button {
+                    transform: translate(0px, 10px)!important;
+                  }
+                }
+              }
+              .results-wrapper {
+                .calculation-information {
+                  h3 {
+                    width: 200px!important; 
+                  }
                   p {
-                    // font-size: 14px!important;
+                    width: 320px!important; 
+                  }
+                }
+                .x-year-results {
+                  h3 {
+                    width: 200px!important; 
                   }
                 }
               }
               .button-wrapper {
-                // margin-bottom: 1rem!important;
+                transform: translate(-30px, 0px)!important;
               }
             }
           }
           .calculation-info-tab {
-            // width: 30px !important;
+            width: 20px !important;
             h6 {
-              // transform: translateX(.3rem);
+              transform: translateX(.65rem)!important;
             }
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 420px) {
+  .wrapper {
+    .inner {
+      .main-container {
+        .tabs-input-wrapper {
+          transform: translateX(-165px)!important;
+          width: 85%!important;
+          .input-wrapper {
+            .input-container {
+              .results-wrapper {
+                .calculation-details {
+                  p {
+                    width: 85%!important;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 380px) {
+  .wrapper {
+    .inner {
+      .heading-container {
+        padding-top: 1rem!important;
+        h1 {
+          font-size: 22px!important;
+          .savings {
+            transform: translate(160px, -5px)!important;
+
           }
         }
       }
@@ -625,6 +705,7 @@ p {
       .tabs-input-wrapper {
         z-index: 999;
         display: flex;
+        margin-bottom: 1rem;
         .input-wrapper {
           transform: translateX(-115px);
           width: 400px;
@@ -735,6 +816,7 @@ p {
               .submit-btn-container {
                 display: flex;
                 justify-content: flex-end;
+                margin-bottom: 1rem;
               }
             }
             .results-wrapper {
@@ -783,10 +865,15 @@ p {
                   // text-align: end;
                   span {
                     font-size: 36px;
+                    font-weight: 500;
+
                   }
                 }
               }
               .calculation-details {
+                h3 {
+                  margin-bottom: .5rem;
+                }
                 p {
                   font-size: 15px;
                   margin-bottom: 1rem;
@@ -798,6 +885,10 @@ p {
               justify-content: flex-end;
               align-items: flex-end;
               // margin-bottom: 1rem;
+              button {
+                color: $light-3;
+                font-weight: 400;
+              }
             }
           }
         }

@@ -71,41 +71,39 @@ p {
     overflow-x: hidden; } }
 
 @media only screen and (max-width: 1092px) {
-  .wrapper .inner .main-container {
-    overflow-x: hidden; }
-    .wrapper .inner .main-container .tabs-input-wrapper .input-wrapper .tabs-wrapper .tab {
-      width: 97px !important;
-      padding-right: 0.5rem !important; }
-      .wrapper .inner .main-container .tabs-input-wrapper .input-wrapper .tabs-wrapper .tab h6 {
-        font-size: 17px !important; }
-    .wrapper .inner .main-container .tabs-input-wrapper .input-wrapper .tabs-wrapper .tab-info {
-      width: 50px !important; }
-    .wrapper .inner .main-container .tabs-input-wrapper .input-wrapper .input-container {
-      padding: 1rem 3rem 3rem 2rem !important; }
-      .wrapper .inner .main-container .tabs-input-wrapper .input-wrapper .input-container .results-wrapper {
-        width: 400px !important; }
-        .wrapper .inner .main-container .tabs-input-wrapper .input-wrapper .input-container .results-wrapper .calculation-information h3 {
-          font-size: 28px !important; }
-        .wrapper .inner .main-container .tabs-input-wrapper .input-wrapper .input-container .results-wrapper .calculation-information p {
-          width: 350px !important;
-          font-size: 16px !important; }
-        .wrapper .inner .main-container .tabs-input-wrapper .input-wrapper .input-container .results-wrapper .x-year-results h3 {
-          font-size: 28px !important; }
-        .wrapper .inner .main-container .tabs-input-wrapper .input-wrapper .input-container .results-wrapper .x-year-results h4 {
-          font-size: 20px !important; }
-        .wrapper .inner .main-container .tabs-input-wrapper .input-wrapper .input-container .results-wrapper .x-year-results p {
-          font-size: 17px !important;
-          width: 350px !important; }
-        .wrapper .inner .main-container .tabs-input-wrapper .input-wrapper .input-container .results-wrapper .x-year-results h2 span {
-          font-size: 30px !important; }
-        .wrapper .inner .main-container .tabs-input-wrapper .input-wrapper .input-container .results-wrapper .calculation-details {
-          margin-top: 0.5rem !important; }
-      .wrapper .inner .main-container .tabs-input-wrapper .input-wrapper .input-container .button-wrapper {
-        margin-bottom: 1rem !important; }
-    .wrapper .inner .main-container .tabs-input-wrapper .calculation-info-tab {
-      width: 30px !important; }
-      .wrapper .inner .main-container .tabs-input-wrapper .calculation-info-tab h6 {
-        transform: translateX(0.3rem); } }
+  .wrapper .inner .main-container .tabs-input-wrapper .input-wrapper .tabs-wrapper .tab {
+    width: 97px !important;
+    padding-right: 0.5rem !important; }
+    .wrapper .inner .main-container .tabs-input-wrapper .input-wrapper .tabs-wrapper .tab h6 {
+      font-size: 17px !important; }
+  .wrapper .inner .main-container .tabs-input-wrapper .input-wrapper .tabs-wrapper .tab-info {
+    width: 50px !important; }
+  .wrapper .inner .main-container .tabs-input-wrapper .input-wrapper .input-container {
+    padding: 1rem 3rem 2rem 2rem !important; }
+    .wrapper .inner .main-container .tabs-input-wrapper .input-wrapper .input-container .results-wrapper {
+      width: 400px !important; }
+      .wrapper .inner .main-container .tabs-input-wrapper .input-wrapper .input-container .results-wrapper .calculation-information h3 {
+        font-size: 28px !important; }
+      .wrapper .inner .main-container .tabs-input-wrapper .input-wrapper .input-container .results-wrapper .calculation-information p {
+        width: 350px !important;
+        font-size: 16px !important; }
+      .wrapper .inner .main-container .tabs-input-wrapper .input-wrapper .input-container .results-wrapper .x-year-results h3 {
+        font-size: 28px !important; }
+      .wrapper .inner .main-container .tabs-input-wrapper .input-wrapper .input-container .results-wrapper .x-year-results h4 {
+        font-size: 20px !important; }
+      .wrapper .inner .main-container .tabs-input-wrapper .input-wrapper .input-container .results-wrapper .x-year-results p {
+        font-size: 17px !important;
+        width: 350px !important; }
+      .wrapper .inner .main-container .tabs-input-wrapper .input-wrapper .input-container .results-wrapper .x-year-results h2 span {
+        font-size: 30px !important; }
+      .wrapper .inner .main-container .tabs-input-wrapper .input-wrapper .input-container .results-wrapper .calculation-details {
+        margin-top: 0.5rem !important; }
+    .wrapper .inner .main-container .tabs-input-wrapper .input-wrapper .input-container .button-wrapper {
+      margin-bottom: 1rem !important; }
+  .wrapper .inner .main-container .tabs-input-wrapper .calculation-info-tab {
+    width: 30px !important; }
+    .wrapper .inner .main-container .tabs-input-wrapper .calculation-info-tab h6 {
+      transform: translateX(0.3rem); } }
 
 @media only screen and (max-width: 835px) {
   .wrapper .inner .main-container .coffee-cup-container {
@@ -143,7 +141,21 @@ p {
 
 @media only screen and (max-width: 715px) {
   .wrapper .inner .heading-container {
-    transform: translate(-100px, 30px) !important;
+    transform: translate(0px, 30px) !important;
+    width: 320px !important; }
+    .wrapper .inner .heading-container h1 {
+      font-size: 28px; }
+      .wrapper .inner .heading-container h1 .savings {
+        font-size: 40px !important;
+        transform: translate(240px, -5px) !important; }
+  .wrapper .inner .main-container .coffee-cup-container {
+    transform: translateX(-100px) !important; }
+  .wrapper .inner .main-container .tabs-input-wrapper {
+    transform: translateX(-190px) !important; } }
+
+@media only screen and (max-width: 595px) {
+  .wrapper .inner .heading-container {
+    transform: translate(0px, 30px) !important;
     width: 300px !important; }
     .wrapper .inner .heading-container h1 {
       font-size: 26px; }
@@ -153,7 +165,117 @@ p {
   .wrapper .inner .main-container .coffee-cup-container {
     transform: translateX(-100px) !important; }
   .wrapper .inner .main-container .tabs-input-wrapper {
-    transform: translateX(-180px); } }
+    transform: translateX(-240px) !important; }
+    .wrapper .inner .main-container .tabs-input-wrapper .input-wrapper .input-container {
+      padding: 1rem 3rem 0.5rem 2rem !important; } }
+
+@media only screen and (max-width: 560px) {
+  .wrapper .inner .heading-container {
+    transform: translate(-90px, 30px) !important;
+    width: 300px !important;
+    margin-top: 1rem !important; }
+    .wrapper .inner .heading-container h1 {
+      font-size: 26px; }
+      .wrapper .inner .heading-container h1 .savings {
+        font-size: 37px !important;
+        transform: translate(240px, -5px) !important; }
+  .wrapper .inner .main-container .coffee-cup-container {
+    transform: translateX(-100px) !important; }
+  .wrapper .inner .main-container .tabs-input-wrapper {
+    transform: translateX(-220px);
+    width: 100% !important; }
+    .wrapper .inner .main-container .tabs-input-wrapper .input-wrapper .input-container .results-wrapper {
+      width: 320px !important; }
+      .wrapper .inner .main-container .tabs-input-wrapper .input-wrapper .input-container .results-wrapper .calculation-information h3 {
+        font-size: 26px !important; }
+      .wrapper .inner .main-container .tabs-input-wrapper .input-wrapper .input-container .results-wrapper .calculation-information p {
+        font-size: 15px !important; }
+      .wrapper .inner .main-container .tabs-input-wrapper .input-wrapper .input-container .results-wrapper .x-year-results h3 {
+        font-size: 26px !important; }
+      .wrapper .inner .main-container .tabs-input-wrapper .input-wrapper .input-container .results-wrapper .x-year-results h4 {
+        font-size: 19px !important; }
+      .wrapper .inner .main-container .tabs-input-wrapper .input-wrapper .input-container .results-wrapper .x-year-results p {
+        font-size: 16px !important; } }
+
+@media only screen and (max-width: 513px) {
+  .wrapper .inner .heading-container {
+    transform: translate(-110px, 30px) !important;
+    width: 300px !important;
+    margin-top: 1rem !important; }
+    .wrapper .inner .heading-container h1 {
+      font-size: 26px; }
+      .wrapper .inner .heading-container h1 .savings {
+        font-size: 37px !important;
+        transform: translate(240px, -5px) !important; }
+  .wrapper .inner .main-container .coffee-cup-container {
+    transform: translateX(-60px) !important; }
+    .wrapper .inner .main-container .coffee-cup-container .cup-lid-dent {
+      width: 40px !important;
+      height: 10px !important;
+      transform: translate(-80px, 22px) !important; }
+    .wrapper .inner .main-container .coffee-cup-container .cup-lid-top {
+      width: 260px !important; }
+    .wrapper .inner .main-container .coffee-cup-container .cup-lid-wrapper .cup-lid {
+      width: 300px !important;
+      height: 70px !important; }
+      .wrapper .inner .main-container .coffee-cup-container .cup-lid-wrapper .cup-lid .cup-lid-shading-wrapper .cup-lid-shading {
+        height: 65px !important; }
+    .wrapper .inner .main-container .coffee-cup-container .cup-main-wrapper .cup-main {
+      width: 270px !important;
+      height: 460px !important; }
+      .wrapper .inner .main-container .coffee-cup-container .cup-main-wrapper .cup-main .cup-main-shading-wrapper .cup-main-shading-1 {
+        height: 460px !important; }
+      .wrapper .inner .main-container .coffee-cup-container .cup-main-wrapper .cup-main .cup-main-shading-wrapper .cup-main-shading-2 {
+        height: 460px !important; }
+    .wrapper .inner .main-container .coffee-cup-container .cup-bottom-wrapper .cup-bottom {
+      width: 220px !important; }
+  .wrapper .inner .main-container .tabs-input-wrapper {
+    transform: translateX(-150px) !important; } }
+
+@media only screen and (max-width: 475px) {
+  .wrapper .inner .heading-container h1 {
+    font-size: 24px; }
+    .wrapper .inner .heading-container h1 .savings {
+      font-size: 32px !important;
+      transform: translate(200px, -5px) !important; }
+  .wrapper .inner .main-container .tabs-input-wrapper {
+    transform: translateX(-135px) !important;
+    width: 90%; }
+    .wrapper .inner .main-container .tabs-input-wrapper .input-wrapper .input-container {
+      padding: 1rem 1rem 2rem 1rem !important; }
+      .wrapper .inner .main-container .tabs-input-wrapper .input-wrapper .input-container form .age-container, .wrapper .inner .main-container .tabs-input-wrapper .input-wrapper .input-container form .cups-per-week-container, .wrapper .inner .main-container .tabs-input-wrapper .input-wrapper .input-container form .price-per-cup-container {
+        font-size: 18px !important; }
+      .wrapper .inner .main-container .tabs-input-wrapper .input-wrapper .input-container form .user-input {
+        width: 80px !important; }
+      .wrapper .inner .main-container .tabs-input-wrapper .input-wrapper .input-container form .submit-btn-container .button {
+        transform: translate(0px, 10px) !important; }
+      .wrapper .inner .main-container .tabs-input-wrapper .input-wrapper .input-container .results-wrapper .calculation-information h3 {
+        width: 200px !important; }
+      .wrapper .inner .main-container .tabs-input-wrapper .input-wrapper .input-container .results-wrapper .calculation-information p {
+        width: 320px !important; }
+      .wrapper .inner .main-container .tabs-input-wrapper .input-wrapper .input-container .results-wrapper .x-year-results h3 {
+        width: 200px !important; }
+      .wrapper .inner .main-container .tabs-input-wrapper .input-wrapper .input-container .button-wrapper {
+        transform: translate(-30px, 0px) !important; }
+    .wrapper .inner .main-container .tabs-input-wrapper .calculation-info-tab {
+      width: 20px !important; }
+      .wrapper .inner .main-container .tabs-input-wrapper .calculation-info-tab h6 {
+        transform: translateX(0.65rem) !important; } }
+
+@media only screen and (max-width: 420px) {
+  .wrapper .inner .main-container .tabs-input-wrapper {
+    transform: translateX(-165px) !important;
+    width: 85% !important; }
+    .wrapper .inner .main-container .tabs-input-wrapper .input-wrapper .input-container .results-wrapper .calculation-details p {
+      width: 85% !important; } }
+
+@media only screen and (max-width: 380px) {
+  .wrapper .inner .heading-container {
+    padding-top: 1rem !important; }
+    .wrapper .inner .heading-container h1 {
+      font-size: 22px !important; }
+      .wrapper .inner .heading-container h1 .savings {
+        transform: translate(160px, -5px) !important; } }
 
 .wrapper {
   display: flex;
@@ -301,7 +423,8 @@ p {
                 border-radius: 0px 0px 0px 10px; }
       .wrapper .inner .main-container .tabs-input-wrapper {
         z-index: 999;
-        display: flex; }
+        display: flex;
+        margin-bottom: 1rem; }
         .wrapper .inner .main-container .tabs-input-wrapper .input-wrapper {
           transform: translateX(-115px);
           width: 400px;
@@ -387,7 +510,8 @@ p {
               padding-bottom: 1rem; }
             .wrapper .inner .main-container .tabs-input-wrapper .input-wrapper .input-container form .submit-btn-container {
               display: flex;
-              justify-content: flex-end; }
+              justify-content: flex-end;
+              margin-bottom: 1rem; }
             .wrapper .inner .main-container .tabs-input-wrapper .input-wrapper .input-container .results-wrapper {
               width: 600px;
               color: #E4DDBD; }
@@ -417,7 +541,10 @@ p {
                 margin-top: 2rem;
                 font-size: 22px; }
               .wrapper .inner .main-container .tabs-input-wrapper .input-wrapper .input-container .results-wrapper .x-year-results h2 span {
-                font-size: 36px; }
+                font-size: 36px;
+                font-weight: 500; }
+              .wrapper .inner .main-container .tabs-input-wrapper .input-wrapper .input-container .results-wrapper .calculation-details h3 {
+                margin-bottom: .5rem; }
               .wrapper .inner .main-container .tabs-input-wrapper .input-wrapper .input-container .results-wrapper .calculation-details p {
                 font-size: 15px;
                 margin-bottom: 1rem; }
@@ -425,6 +552,9 @@ p {
               display: flex;
               justify-content: flex-end;
               align-items: flex-end; }
+              .wrapper .inner .main-container .tabs-input-wrapper .input-wrapper .input-container .button-wrapper button {
+                color: #E4DDBD;
+                font-weight: 400; }
         .wrapper .inner .main-container .tabs-input-wrapper .calculation-info-tab {
           cursor: pointer;
           transition: 200ms;
